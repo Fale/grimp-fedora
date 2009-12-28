@@ -195,7 +195,7 @@ EOF
 
 
 ### Dolphin
-cat > /usr/share/kde-settings/kde-profile/default/share/config <<EOF
+cat > /usr/share/kde-settings/kde-profile/default/share/config/dolphinrc <<EOF
 [General]
 ShowCopyMoveMenu=true
 EOF
