@@ -78,7 +78,9 @@ rpmfusion-nonfree-release
 livna-release
 
 # codecs
-gstreamer-plugins-*
+gstreamer-plugins-good
+gstreamer-plugins-bad
+gstreamer-plugins-ugly
 libdvdcss
 
 # evil programs
@@ -180,7 +182,11 @@ EOF
 ### OUR EDITS
 
 # Synaptic device
-cta bashrc.append >> /etc/bashrc
+cat >> /etc/sysconfig/desktop <<EOF
+synclient tapbutton1=1
+synclient vertedgescroll=1
+synclient horizedgescroll=1
+EOF
 
 # Dolphin
 cp default/share/config/dolphinrc /usr/share/kde-settings/kde-profile/default/share/config
