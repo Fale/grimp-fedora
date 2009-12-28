@@ -50,7 +50,6 @@ kdeedu-math
 yum-presto
 
 # office
-evince
 openoffice.org-base
 openoffice.org-calc
 openoffice.org-impress
