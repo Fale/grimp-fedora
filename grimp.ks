@@ -179,18 +179,31 @@ EOF
 
 
 
-### OUR EDITS
+###### OUR EDITS
 
-# Synaptic device
-cat >> /etc/sysconfig/desktop <<EOF
+### Synaptic device
+cat >> /etc/bashrc <<EOF
 synclient tapbutton1=1
 synclient vertedgescroll=1
 synclient horizedgescroll=1
 EOF
 
-# Dolphin
-cp default/share/config/dolphinrc /usr/share/kde-settings/kde-profile/default/share/config
-cat default/share/config/kdeglobals.append >> /usr/share/kde-settings/kde-profile/default/share/config/kdeglobals
+
+### Dolphin
+cat > /usr/share/kde-settings/kde-profile/default/share/config <<EOF
+[General]
+ShowCopyMoveMenu=true
+EOF
+
+cat >> /usr/share/kde-settings/kde-profile/default/share/config/kdeglobals <<EOF
+[KDE]
+ShowDeleteCommand=true
+SingleClick=true
+
+[PreviewSettings]
+MaximumSize=5242880
+UseFileThumbnails=true
+EOF
 
 ## Durty stuff
 
