@@ -41,6 +41,10 @@ fuse
 liveusb-creator
 kmess
 rekonq
+kdeedu
+kdeedu-kstars
+kdeedu-marble
+kdeedu-math
 
 # use yum-presto by default
 yum-presto
