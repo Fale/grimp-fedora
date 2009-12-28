@@ -1,0 +1,8 @@
+[KDE]
+ShowDeleteCommand=true
+SingleClick=true
+
+[PreviewSettings]
+MaximumSize=5242880
+UseFileThumbnails=true
+ 
