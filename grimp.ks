@@ -78,6 +78,8 @@ rpmfusion-nonfree-release
 livna-release
 
 # codecs
+xine-lib-extras-freeworld
+gstreamer-ffmpeg
 gstreamer-plugins-good
 gstreamer-plugins-bad
 gstreamer-plugins-ugly
@@ -205,10 +207,9 @@ MaximumSize=5242880
 UseFileThumbnails=true
 EOF
 
-## Durty stuff
-
+##### Hard stuff
 # Global Shortcuts
 #sed -i 's/Switch to Next Desktop=none,none,Va al desktop successivo/Switch to Next Desktop=Ctrl+Alt+Right,none,Va al desktop successivo/' /usr/share/kde-settings/kde-profile/default/share/config/kglobalshortcutsrc
-cp default/share/config/kglobalshortcutsrc /usr/share/kde-settings/kde-profile/default/share/config
+#cp default/share/config/kglobalshortcutsrc /usr/share/kde-settings/kde-profile/default/share/config
 
 %end
