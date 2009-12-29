@@ -37,7 +37,6 @@ kdeedu
 kdeedu-kstars
 kdeedu-marble
 kdeedu-math
-pavucontrol
 
 ### Office
 openoffice.org-base
