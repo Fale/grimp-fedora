@@ -1,6 +1,5 @@
 %include fedora-live-base.ks
 
-# we need more space now
 part / --size=8192
 
 rootpw grimp
@@ -201,6 +200,7 @@ ShowCopyMoveMenu=true
 EOF
 
 cat >> /usr/share/kde-settings/kde-profile/default/share/config/kdeglobals <<EOF
+
 [KDE]
 ShowDeleteCommand=true
 SingleClick=true
