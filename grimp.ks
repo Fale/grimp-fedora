@@ -19,7 +19,7 @@ timezone Europe/Rome
 
 %packages
 
-# L10n packages
+### L10n packages
 @italian-support
 hunspell-it
 hunspell-en
@@ -39,23 +39,23 @@ kdeedu-marble
 kdeedu-math
 pavucontrol
 
-# office
+### Office
 openoffice.org-base
 openoffice.org-calc
 openoffice.org-impress
 openoffice.org-math
 openoffice.org-writer
 
-# graphics
+### Graphics
 gimp
 inkscape
 
-# repository packages
+### Repository packages
 rpmfusion-free-release
 rpmfusion-nonfree-release
 livna-release
 
-# codecs
+### Codecs
 xine-lib-extras-freeworld
 gstreamer-ffmpeg
 gstreamer-plugins-good
@@ -63,7 +63,7 @@ gstreamer-plugins-bad
 gstreamer-plugins-ugly
 libdvdcss
 
-# evil programs
+### Evil programs
 vlc
 skype
 google-chrome-beta
@@ -104,6 +104,6 @@ EOF
 #sed -i 's/Switch to Next Desktop=none,none,Va al desktop successivo/Switch to Next Desktop=Ctrl+Alt+Right,none,Va al desktop successivo/' /usr/share/kde-settings/kde-profile/default/share/config/kglobalshortcutsrc
 #cp default/share/config/kglobalshortcutsrc /usr/share/kde-settings/kde-profile/default/share/config
 
-# Plasma
+### Plasma
 
 %end
