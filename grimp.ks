@@ -14,6 +14,7 @@ repo --name=livna --baseurl=http://rpm.livna.org/repo/12/i386/
 repo --name=google --baseurl=http://dl.google.com/linux/rpm/stable/i386
 repo --name=skype --baseurl=http://download.skype.com/linux/repos/fedora/updates/i586/ 
 repo --name=adobe --baseurl=http://linuxdownload.adobe.com/linux/i386/
+### Add localRepo for grimp-release, grimp-logos, grimp-release-notes and move from commons- to grimp-
 
 lang it_IT.UTF-8
 keyboard it
@@ -50,6 +51,14 @@ openoffice.org-writer
 ### Graphics
 gimp
 inkscape
+
+### Rebranding
+-fedora-logos
+-fedora-release
+-fedora-release-notes
+generic-release
+generic-logos
+generic-release-notes
 
 ### Repository packages
 rpmfusion-free-release
