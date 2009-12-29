@@ -4,10 +4,12 @@ part / --size=8192
 
 rootpw grimp
 
-services --disabled=rpcsvcgssd,rpcgssd,rpcidmapd
+services --enabled=NetworkManager,sshd --disabled=rpcsvcgssd,rpcgssd,rpcidmapd,network,nfslock,nfs,rpcbind,sendmail
 
-repo --name=rpm-fusion-free --baseurl=http://download1.rpmfusion.org/free/fedora/releases/12/Everything/i386/os/
-repo --name=rpm-fusion-nonfree --baseurl=http://download1.rpmfusion.org/nonfree/fedora/releases/12/Everything/i386/os/
+repo --name=rpmfusion-free --baseurl=http://download1.rpmfusion.org/free/fedora/releases/12/Everything/i386/os
+repo --name=rpmfusion-free-updates --baseurl=http://download1.rpmfusion.org/free/fedora/updates/12/i386
+repo --name=rpmfusion-non-free  --baseurl=http://download1.rpmfusion.org/nonfree/fedora/releases/12/Everything/i386/os
+repo --name=rpmfusion-non-free-updates --baseurl=http://download1.rpmfusion.org/nonfree/fedora/updates/12/i386
 repo --name=livna --baseurl=http://rpm.livna.org/repo/12/i386/
 repo --name=google --baseurl=http://dl.google.com/linux/rpm/stable/i386
 repo --name=skype --baseurl=http://download.skype.com/linux/repos/fedora/updates/i586/ 
@@ -59,6 +61,7 @@ xine-lib-extras-freeworld
 gstreamer-ffmpeg
 gstreamer-plugins-good
 gstreamer-plugins-bad
+gstreamer-plugins-bad-extras
 gstreamer-plugins-ugly
 libdvdcss
 
